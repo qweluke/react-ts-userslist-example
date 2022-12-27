@@ -26,5 +26,4 @@ yarn start
 
 ## this left todo:
 
-- move component state to the redux/localstorage instead of keeping it in the Route state
-- add missing TS Types / replace `any` types with valid ones
+- move table component state to the redux/localstorage instead of keeping it in the Route state
