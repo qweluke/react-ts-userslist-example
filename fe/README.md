@@ -26,7 +26,5 @@ yarn start
 
 ## this left todo:
 
-- Users list table should be a shared component
 - move component state to the redux/localstorage instead of keeping it in the Route state
 - add missing TS Types / replace `any` types with valid ones
-- things not covered in this document should be added as a comments in the code

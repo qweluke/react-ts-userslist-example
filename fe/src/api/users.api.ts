@@ -1,8 +1,7 @@
 import getAxiosApi from '../services/axiosFactory';
 
-// todo: add missing prop interfaces
 const usersApi = {
-  fetchUsersPaginated: async (props: any) => {
+  fetchUsersPaginated: async (props: { page: number }) => {
     const response = await getAxiosApi({
       url: '/users',
       method: 'get',
@@ -19,7 +18,7 @@ const usersApi = {
         : 0,
     };
   },
-  fetchUserByUsername: async (props: any) => {
+  fetchUserByUsername: async (props: { username: string }) => {
     const response = await getAxiosApi({
       url: '/users',
       method: 'get',
@@ -28,7 +27,7 @@ const usersApi = {
       },
     });
 
-    return response.data[0]  ||  null;
+    return response.data[0] || null;
   },
 };
 

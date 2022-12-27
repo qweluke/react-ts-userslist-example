@@ -23,7 +23,6 @@ const UsersListView = () => {
     null,
   );
 
-  // todo: clear location.state when
   const [currentPage, setCurrentPage] = useState<number>(
     location.state?.currentPage || 0,
   );

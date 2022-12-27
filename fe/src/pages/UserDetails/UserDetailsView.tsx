@@ -55,7 +55,7 @@ const UserDetailsView = () => {
         <Grid item xs={12}>
           <UserInfo
             user={userData}
-            isLoading={usersLoadingStatus === requestStatus.pending}
+            isLoading={usersLoadingStatus !== requestStatus.fulfilled}
           />
         </Grid>
         <Grid item xs={12}>
