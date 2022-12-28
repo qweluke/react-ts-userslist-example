@@ -13,7 +13,7 @@ import requestStatus from '../../store/requestStatus';
 import { useAppDispatch, useAppSelector } from '../../hooks';
 import StyledError from '../../components/ErrorMessage';
 
-const UsersListView = () => {
+const UsersListView: React.FC = () => {
   const location = useLocation();
   const dispatch = useAppDispatch();
   const usersLoadingStatus = useAppSelector(selectUsersLoadingStatus);

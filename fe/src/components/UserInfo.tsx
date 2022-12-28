@@ -8,7 +8,7 @@ interface Props {
   isLoading: boolean;
 }
 
-const UserInfo = (props: Props) => (
+const UserInfo: React.FC<Props> = (props): React.ReactElement => (
   <Box>
     <Typography variant="subtitle2" gutterBottom>
       Username:

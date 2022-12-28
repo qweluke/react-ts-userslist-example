@@ -14,7 +14,7 @@ import requestStatus from '../../store/requestStatus';
 import StyledError from '../../components/ErrorMessage';
 import UserInfo from '../../components/UserInfo';
 
-const UserDetailsView = () => {
+const UserDetailsView: React.FC = () => {
   const location = useLocation();
   const { username } = useParams();
   const dispatch = useAppDispatch();

@@ -17,9 +17,9 @@ interface TableDataGridProps extends DataGridProProps {
 
 const TableDataGrid = ({
   name,
-  isLoading = false,
+  isLoading,
   ...rest
-}: TableDataGridProps) => (
+}: TableDataGridProps): React.ReactElement => (
   <StyledDataGridPro
     rowsPerPageOptions={[20]}
     pageSize={20}
@@ -27,5 +27,9 @@ const TableDataGrid = ({
     {...rest}
   />
 );
+
+TableDataGrid.defaultProps = {
+  isLoading: true,
+};
 
 export default TableDataGrid;

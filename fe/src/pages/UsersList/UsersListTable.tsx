@@ -35,13 +35,13 @@ interface UserListTableProps {
   currentPage: number;
 }
 
-const UsersListTable = ({
+const UsersListTable: React.FC<UserListTableProps> = ({
   rowCount = 0,
   rows = [],
   isLoading = false,
   handlePageChange,
   currentPage,
-}: UserListTableProps): JSX.Element => {
+}): JSX.Element => {
   const navigate = useNavigate();
   const location = useLocation();
 
